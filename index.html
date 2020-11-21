@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Segundo Parcial</title>
+    <link rel="stylesheet" href="estilos.css">
+    <script src="app.js"></script>
+</head>
+<body id="body">
+    <button id="btnAlta" class="button buttonAlta">Alta</button>
+    <hr>
+    <h1 class="alignCenter">Filtros</h2>
+    <hr>
+    Filtrar por:
+    <select name="filtro" id="selFiltrar" class="marginFiltro">
+        <option value="Todo">Todo</option>
+        <option value="auto">Auto</option>
+        <option value="camioneta">Camioneta</option>
+    </select>
+    Promedio de precio:
+    <input type="text" name="promedio" id="txtPromedio" class="marginFiltro">
+    <button class="button buttonAlta marginFiltro" id="btnPromedio">Calcular Promedio</button>
+    <hr>
+    <h1 class="alignCenter">Lista de Vehiculos</h2>
+    <hr>
+
+    <table>
+        <thead>
+            <th>ID</th>
+            <th>Marca</th>
+            <th>Modelo</th>
+            <th>Precio</th>
+            <th>Accion</th>            
+        </thead>
+        <tbody id="tabBodyVehiculos">
+
+        </tbody>
+    </table>
+
+
+
+
+
+
+    <div id="divContainer" hidden="true">
+        <input type="button" class="button btnBad" id="btnClose" value="x"/>
+        <br />
+        <br />
+        <label for="txtID" class="text">
+            ID:
+        </label>
+        <br />
+        <input class="textBox" type="text" id="txtID" placeholder="ID..." disabled/>
+        <br />
+        <label for="txtMarca" class="text">
+            Marca:
+        </label>
+        <br />
+        <input class="textBox" type="text" id="txtMarca" placeholder="Marca..."/> 
+        <br />
+        <label class="text">
+            Modelo:
+        </label>
+        <br />
+        <input class="textBox" type="text" id="txtModelo" placeholder="Modelo..."/> 
+        <br />
+        <label class="text">
+            Precio:
+        </label>
+        <br />
+        <input class="textBox" type="text" id="txtPrecio" placeholder="Precio..."/> 
+        <br>
+        <label class="text" id="lblPuertas">
+            Cantidad de Puertas:
+        </label>
+        <br />
+        <input class="textBox" type="text" id="txtPuertas" placeholder="Puertas..."/> 
+        <br>
+        <label class="text" hidden="true" id="lbl4">
+            4X4:
+        </label>
+        <input class="radioButton" type="checkbox" name="4x4" id="cb4" hidden="true">
+        <br>
+        <br>
+        <label for="selTipo" class="text">
+            Tipo:
+        </label>
+        <br />
+        <select name="selTipo" id="selTipo" class="selbox">
+            <option value="auto">Auto</option>
+            <option value="camioneta">Camioneta</option>
+        </select>
+        <br>
+        <br>
+        <hr>        
+        <input type="button" class="button btnBad" id="btnCerrar" value="Cerrar"/>
+        <input type="button" class="button" id="btnAgregar" value="Agregar"/>
+    </div>
+</body>
+</html>
