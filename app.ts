@@ -202,7 +202,12 @@ class App{
         }, new Vehiculo(0, "", "", 0));
 
         let promedio:number = accVehiculo.precio / this.listaVehiculos.length;
-        txtPromedio.value = promedio.toString();
+        if(isNaN(promedio))
+        {
+            txtPromedio.value = "";
+        }else{
+            txtPromedio.value = promedio.toString();
+        }
     }
 
     public filtrarVehiculos():void{
