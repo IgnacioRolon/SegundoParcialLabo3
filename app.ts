@@ -36,7 +36,6 @@ class Camioneta extends Vehiculo
     {
         super(id, marca, modelo, precio);
         this.cuatroXcuatro = cuatroXcuatro;
-        this.tipo = "camioneta";
     }
 
     toVehiculo():Vehiculo

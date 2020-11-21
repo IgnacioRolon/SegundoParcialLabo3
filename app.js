@@ -37,7 +37,6 @@ var Camioneta = /** @class */ (function (_super) {
     function Camioneta(id, marca, modelo, precio, cuatroXcuatro) {
         var _this = _super.call(this, id, marca, modelo, precio) || this;
         _this.cuatroXcuatro = cuatroXcuatro;
-        _this.tipo = "camioneta";
         return _this;
     }
     Camioneta.prototype.toVehiculo = function () {
